@@ -1,0 +1,10 @@
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Chemistry', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Math', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('English', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Biology', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Computer Science', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Cobol', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Java', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Python', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('Rust', 0);
+INSERT INTO course (course_name, num_of_registered_students) VALUES ('C++', 0);
