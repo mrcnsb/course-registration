@@ -46,3 +46,45 @@ The Docker Compose configuration is in the `docker-compose.yml` file. You can cu
 
 - MySQL: 3308 (host) -> 3306 (container)
 - Spring Boot app: 8081 (host) -> 8080 (container)
+
+#########################
+
+application.properties allows to set up the maxumum number of registered students to one course and students maximum number of registered courses.
+
+//COURSE
+maximumNumberOfStudentsRegistered=50
+//STUDENT
+maximumNumberOfCoursesRegistered=5
+
+#########################
+Endpoints description available at:
+
+http://localhost:8081/swagger-ui/index.html#/
+
+### Student controller
+
+POST
+/students/register
+/students/register/{studentId}/to-course/{courseId}
+PATCH
+/students/edit/{studentId}
+GET
+/students/{courseId}
+/students/withoutAnyCourses
+/students/details/{studentId}
+DELETE
+/students/unregister/{studentId}/from-course/{courseId}
+/students/delete/{studentId}
+
+### Course controller
+
+POST
+/students/delete/{studentId}
+PATCH
+/courses/edit/{courseId}
+GET
+/courses/withoutAnyStudents
+/courses/details/{courseId}
+/courses/details/{courseId}
+DELETE
+/courses/delete/{courseId}
